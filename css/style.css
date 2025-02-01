@@ -6,13 +6,22 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: 1px solid tomato;
+}
+
+html, body {
+  width: 100vw;
+  min-width: 1500px;
 }
 
 .flex {
   display: flex;
 }
 
+/*---------------------Header-------------------------------------*/
+
 .header {
+  box-sizing: border-box;
   width: 100%;
   background: #fff;
   position: fixed;
@@ -116,9 +125,88 @@
   font-size: 19px;
 }
 
+/*---------------------MainScreen-------------------------------------*/
+
 .main {
-  margin-top: 140px;
-  background: tomato;
+  padding-top: 140px;
+}
+
+.main-screen {
+  position: relative;
   width: 100%;
-  height: 8000px;
+}
+
+.main-screen_bg {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: -180px;
+  z-index: -1;
+  display: inline-block;
+}
+
+.main-screen_text-container {
+  padding-top: 160px;
+  margin-left: 20%;
+}
+
+.main-screen_text-up {
+  font-size: 36px;
+  font-family: "Yellowtail", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 15px;
+}
+
+.main-screen_title {
+  font-size: 70px;
+  font-family: "Roboto", serif;
+  font-weight: 800;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.main-screen_explore-now {
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  background: #EFD372;
+  border-radius: 16px;
+  width: 220px;
+  height: 82px;
+  text-decoration: none;
+}
+
+.main-screen_link {
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 24px;
+  color: #274C5B;
+}
+
+.main-screen_circle {
+  position: relative;
+  display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #335B6B;
+}
+
+.main-screen_icon-arrow {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*---------------------Card-------------------------------------*/
+
+.card {
+  width: 100%;
+  padding: 0 30px;
 }
